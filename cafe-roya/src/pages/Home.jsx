@@ -6,6 +6,7 @@ import WhyChooseUs from "../components/WhyChooseUs";
 import Newsletter from "../components/Newsletter";
 import Menus from "../components/Menu/Menus";
 import Testimonials from "../components/Testimonials";
+import Events from "../components/Events";
 
 const Home = () => {
   return (
@@ -22,6 +23,7 @@ const Home = () => {
         <WhyChooseUs />
         <Menus />
         <Testimonials />
+        <Events />
       </main>
     </div>
   );
