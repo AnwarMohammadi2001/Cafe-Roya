@@ -6,6 +6,9 @@ import private_party from "../assets/privateparty.jpg";
 import custome_party from "../assets/privatparty.jpg";
 import birthday_party from "../assets/birthday.jpg";
 import wedding_party from "../assets/wedding.jpg";
+import chief1 from "../assets/chefs-1.jpg";
+import chief2 from "../assets/cheif1.jpg";
+import chief3 from "../assets/cheif3.jpg";
 
 export const CUSTOMERS = [
   {
@@ -70,5 +73,47 @@ export const EVENTS = [
     image: birthday_party,
     cost: 240,
     des: "The food was absolutely delicious! I loved the variety of dishes, and the staff was incredibly friendly. Definitely my go-to place for a great meal!",
+  },
+];
+
+export const chief = [
+  {
+    id: 1,
+    name: "Mohammad",
+    image: chief1,
+    job: "Master Chef",
+    description:
+      "Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.",
+    socialMedia: {
+      twitter: "https://twitter.com/johndoe",
+      linkedin: "https://linkedin.com/in/johndoe",
+      instagram: "https://instagram.com/johndoe",
+    },
+  },
+  {
+    id: 2,
+    name: "Zahra",
+    image: chief2,
+    job: "Master Chef",
+    description:
+      "Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.",
+    socialMedia: {
+      twitter: "https://twitter.com/johndoe",
+      linkedin: "https://linkedin.com/in/johndoe",
+      instagram: "https://instagram.com/johndoe",
+    },
+  },
+  {
+    id: 3,
+    name: "Ahmadullah",
+    image: chief3,
+    job: "Master Chef",
+    description:
+      "Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.",
+    socialMedia: {
+      twitter: "https://twitter.com/johndoe",
+      linkedin: "https://linkedin.com/in/johndoe",
+      instagram: "https://instagram.com/johndoe",
+    },
   },
 ];

@@ -7,6 +7,7 @@ import Newsletter from "../components/Newsletter";
 import Menus from "../components/Menu/Menus";
 import Testimonials from "../components/Testimonials";
 import Events from "../components/Events";
+import Cheif from "../components/Cheif";
 
 const Home = () => {
   return (
@@ -24,6 +25,7 @@ const Home = () => {
         <Menus />
         <Testimonials />
         <Events />
+        <Cheif />
       </main>
     </div>
   );
