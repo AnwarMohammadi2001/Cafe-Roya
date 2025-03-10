@@ -8,6 +8,7 @@ import Menus from "../components/Menu/Menus";
 import Testimonials from "../components/Testimonials";
 import Events from "../components/Events";
 import Cheif from "../components/Cheif";
+import BookTable from "../components/BookTable";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
         <Testimonials />
         <Events />
         <Cheif />
+        <BookTable />
       </main>
     </div>
   );

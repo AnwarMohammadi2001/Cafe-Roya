@@ -12,7 +12,7 @@ const Events = () => {
   const paginationRef = useRef(null); // Ref for pagination container
 
   return (
-    <div className="relative group h-[650px] mt-5">
+    <div className="relative group h-[650px] mt-10">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         pagination={{
