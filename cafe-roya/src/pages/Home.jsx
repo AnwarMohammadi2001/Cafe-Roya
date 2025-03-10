@@ -5,6 +5,7 @@ import About from "./About";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Newsletter from "../components/Newsletter";
 import Menus from "../components/Menu/Menus";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
@@ -14,13 +15,14 @@ const Home = () => {
           <Navbar />
         </div>
       </header>
-      <div className="mt-12">
+      <main className="mt-12">
         <Hero />
         <About />
         <Newsletter />
         <WhyChooseUs />
         <Menus />
-      </div>
+        <Testimonials />
+      </main>
     </div>
   );
 };

@@ -21,13 +21,7 @@ body {
   font-size: 12px;
 }
 /* 
-.clip-triangle {
-  clip-path: polygon(0 0, 60% 0, 10 100%);
-}
 
-.clip-triangle-reverse {
-  clip-path: polygon(100% 100%, 0 100%, 100% 0);
-} */
 
 .clip-diagonal-left {
   clip-path: polygon(0 0, 60% 0, 40% 100%, 0% 100%);
