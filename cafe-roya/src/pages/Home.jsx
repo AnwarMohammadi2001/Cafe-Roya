@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 import About from "./About";
+import WhyChooseUs from "../components/WhyChooseUs";
+import Newsletter from "../components/Newsletter";
 
 const Home = () => {
   return (
@@ -14,6 +16,8 @@ const Home = () => {
       <div className="mt-12">
         <Hero />
         <About />
+        <Newsletter />
+        <WhyChooseUs />
       </div>
     </div>
   );
