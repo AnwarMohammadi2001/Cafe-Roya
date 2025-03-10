@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import About from "./About";
 import WhyChooseUs from "../components/WhyChooseUs";
 import Newsletter from "../components/Newsletter";
+import Menus from "../components/Menu/Menus";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <About />
         <Newsletter />
         <WhyChooseUs />
+        <Menus />
       </div>
     </div>
   );

@@ -17,7 +17,6 @@
 body {
   margin: 0;
   background-color: oklch(0.987 0.022 95.277);
-  color: #eee;
   font-family: Poppins;
   font-size: 12px;
 }

@@ -18,13 +18,13 @@ const Newsletter = () => {
           Stay Informed About Special Offers
         </h3>
       </div>
-      <div className="text-center bg-white relative z-10 border flex justify-end w-[450px] rounded-md">
+      <div className="text-center bg-white relative z-10  flex justify-end w-[450px] ">
         <input
           type="email"
           placeholder="Enter your email"
-          className="p-2 w-full bg-white placeholder:text-black border-gray-300 focus:outline-none relative z-20"
+          className="p-3 w-full bg-white text-black  placeholder:text-black  focus:outline-none relative z-20"
         />
-        <button className="px-4 py-2 bg-yellow-600 text-white hover:bg-yellow-700">
+        <button className="px-4 py-3 bg-yellow-600 text-white hover:bg-yellow-700">
           Subscribe
         </button>
       </div>
