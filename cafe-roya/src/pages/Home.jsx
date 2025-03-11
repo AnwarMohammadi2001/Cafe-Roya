@@ -11,6 +11,7 @@ import Cheif from "../components/Cheif";
 import BookTable from "../components/BookTable";
 import Gallary from "../components/Gallary";
 import Contact from "./Contact";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -32,6 +33,7 @@ const Home = () => {
         <BookTable />
         <Gallary />
         <Contact />
+        <Footer />
       </main>
     </div>
   );
