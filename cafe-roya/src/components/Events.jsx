@@ -15,9 +15,6 @@ const Events = () => {
     <div className="relative group h-[650px] mt-10">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
-        pagination={{
-          clickable: true,
-        }}
         loop={true}
         autoplay={{ delay: 3000 }}
         spaceBetween={2}

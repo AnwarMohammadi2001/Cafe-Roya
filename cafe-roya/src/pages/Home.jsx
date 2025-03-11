@@ -9,6 +9,8 @@ import Testimonials from "../components/Testimonials";
 import Events from "../components/Events";
 import Cheif from "../components/Cheif";
 import BookTable from "../components/BookTable";
+import Gallary from "../components/Gallary";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -28,6 +30,8 @@ const Home = () => {
         <Events />
         <Cheif />
         <BookTable />
+        <Gallary />
+        <Contact />
       </main>
     </div>
   );

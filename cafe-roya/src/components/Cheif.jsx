@@ -8,7 +8,7 @@ import { chief } from "./deta";
 
 const Chef = () => {
   return (
-    <div className="bg-gray-100 ">
+    <div id="chef" className="bg-gray-100 ">
       <div className="text-center max-w-[80%] mx-auto py-10">
         <h1 className="text-gray-700 text-lg">CHEFS</h1>
         <h2 className="text-gray-900 font-semibold pt-5 text-lg">

@@ -19,7 +19,7 @@ const Menus = () => {
   const [activeMenu, setActiveMenu] = useState("Starters");
 
   return (
-    <section className="p-6">
+    <section id="menu" className="p-6">
       <div className="text-center space-y-3 py-5">
         <h2 className="text-lg font-semibold">Our Menu</h2>
         <h3 className="text-3xl text-gray-600">Check Our Cafe Roya Menu</h3>

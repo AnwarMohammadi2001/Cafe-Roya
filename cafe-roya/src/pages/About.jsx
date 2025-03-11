@@ -7,7 +7,7 @@ import table from "../assets/table.jpg";
 
 const About = () => {
   return (
-    <div className="bg-amber-50 overflow-hidden min-h-[100vh]  py-12">
+    <div id="about" className="bg-amber-50 overflow-hidden min-h-[100vh]  py-12">
       {/* First Row: Title */}
       <div className="text-center mb-12">
         <h1 className="text-lg font-bold text-gray-800">About Us</h1>
