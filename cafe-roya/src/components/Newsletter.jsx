@@ -1,5 +1,7 @@
 import React from "react";
 import img from "../assets/news.jpg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/framermotion/variants";
 
 const Newsletter = () => {
   return (
@@ -13,12 +15,18 @@ const Newsletter = () => {
       <div className="absolute inset-0 bg-yellow-600 clip-diagonal-left opacity-80"></div>
        {/* right colored section */}
       <div className="absolute inset-0 clip-diagonal-right bg-black opacity-60 "></div>
-      <div className="text-center relative z-10">
+      <motion.div    variants={fadeIn("up")}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0 }}  className="text-center relative z-10">
         <h3 className="text-white text-2xl font-bold">
           Stay Informed About Special Offers
         </h3>
-      </div>
-      <div className="text-center bg-white relative z-10  flex justify-end w-[450px] ">
+      </motion.div>
+      <motion.div    variants={fadeIn("up")}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0 }} className="text-center bg-white relative z-10  flex justify-end w-[450px] ">
         <input
           type="email"
           placeholder="Enter your email"
@@ -27,7 +35,7 @@ const Newsletter = () => {
         <button className="px-4 py-3 bg-yellow-600 text-white hover:bg-yellow-700">
           Subscribe
         </button>
-      </div>
+      </motion.div>
 
       {/* Content */}
     </div>

@@ -2,10 +2,18 @@ import React from "react";
 import ReadMoreBtn from "../utils/ReadMoreBtn";
 import img from "../assets/why.jpg";
 import { Coffee, Heart, Star, ThumbsUp } from "lucide-react";
+import { fadeIn } from "../utils/framermotion/variants";
+import { motion } from "framer-motion";
 const WhyChooseUs = () => {
   return (
     <div className="bg-amber-50 overflow-hidden min-h-[500px]   py-20">
-      <div className="flex max-w-[80%] mx-auto flex-col h-[380px] md:flex-row gap-10">
+      <motion.div
+        variants={fadeIn("down", 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="flex max-w-[80%] mx-auto flex-col h-[380px] md:flex-row gap-10"
+      >
         {/* First Div (1/2 of the other three divs) */}
         <div
           style={{
@@ -80,7 +88,7 @@ const WhyChooseUs = () => {
             </p>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

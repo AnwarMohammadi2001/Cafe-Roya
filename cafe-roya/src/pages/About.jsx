@@ -4,10 +4,15 @@ import img2 from "../assets/about3.jpg";
 import img3 from "../assets/about4.jpg";
 import img4 from "../assets/about5.jpg";
 import table from "../assets/table.jpg";
+import { fadeIn } from "../utils/framermotion/variants";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div id="about" className="bg-amber-50 overflow-hidden min-h-[100vh]  py-12">
+    <div
+      id="about"
+      className="bg-amber-50 overflow-hidden min-h-[100vh]  py-12"
+    >
       {/* First Row: Title */}
       <div className="text-center mb-12">
         <h1 className="text-lg font-bold text-gray-800">About Us</h1>
@@ -19,7 +24,13 @@ const About = () => {
       {/* Second Row: Two Sections */}
       <div className="flex max-w-[80%] mx-auto flex-col md:flex-row gap-8">
         {/* Left Section: Image */}
-        <div className="w-full  flex flex-col  gap-5 md:w-1/2">
+        <motion.div
+          variants={fadeIn("right", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full  flex flex-col  gap-5 md:w-1/2"
+        >
           <img
             src={img} // Replace with your image URL
             alt="About Us"
@@ -49,10 +60,16 @@ const About = () => {
               </button>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Section: Title, Description, List, and Image */}
-        <div className="w-full md:w-1/2">
+        <motion.div
+          variants={fadeIn("left", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full md:w-1/2"
+        >
           {/* Title */}
           <h2 className="text-3xl font-semibold text-gray-800 mb-4">
             We with The Aspects Foos Professional Services
@@ -89,7 +106,7 @@ const About = () => {
               <img src={img4} alt="" className="rounded-lg shadow-md" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

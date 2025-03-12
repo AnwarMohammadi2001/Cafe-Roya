@@ -133,10 +133,6 @@ const Hero = () => {
               <div className="title">{item.title}</div>
               <div className="topic">{item.topic}</div>
               <div className="des">{item.description}</div>
-              <div className="buttons">
-                <button>SEE MORE</button>
-                <button>SUBSCRIBE</button>
-              </div>
             </div>
           </div>
         ))}

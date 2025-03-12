@@ -5,6 +5,7 @@ import { CiInstagram } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import { FaWhatsapp } from "react-icons/fa";
 import { chief } from "./deta";
+import { fadeIn } from "../utils/framermotion/variants";
 
 const Chef = () => {
   return (
@@ -17,9 +18,12 @@ const Chef = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 mt-5 lg:grid-cols-3 gap-5">
           {chief.map((item, index) => (
             <motion.div
+              variants={fadeIn("right", 0)}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: false, amount: 0.7 }}
               key={index}
               className="bg-white rounded-md overflow-hidden hover:shadow-xl  transition-all duration-300 relative group"
-              whileHover={{ scale: 1.05 }}
             >
               <div className="relative">
                 <img
@@ -63,7 +67,9 @@ const Chef = () => {
                   {item.name}
                 </h1>
                 <h2 className="text-lg text-gray-500">{item.job}</h2>
-                <p className="text-gray-600 mt-4 text-sm mb-10">{item.description}</p>
+                <p className="text-gray-600 mt-4 text-sm mb-10">
+                  {item.description}
+                </p>
               </div>
             </motion.div>
           ))}
