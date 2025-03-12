@@ -13,7 +13,7 @@ const About = () => {
       id="about"
       className="bg-amber-50 overflow-hidden min-h-[100vh]  py-12"
     >
-      {/* First Row: Title */}
+    
       <div className="text-center mb-12">
         <h1 className="text-lg font-bold text-gray-800">About Us</h1>
         <h1 className="text-3xl mt-3 font-thin text-gray-800">
@@ -21,7 +21,7 @@ const About = () => {
         </h1>
       </div>
 
-      {/* Second Row: Two Sections */}
+
       <div className="flex max-w-[80%] mx-auto flex-col md:flex-row gap-8">
         {/* Left Section: Image */}
         <motion.div
