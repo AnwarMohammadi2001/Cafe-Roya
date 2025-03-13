@@ -1,11 +1,22 @@
 import React from "react";
 import { ICE_MENU } from "./menuitems";
+import { fadeIn } from "../../utils/framermotion/variants";
+import { motion } from "framer-motion";
 const IceCream = () => {
   return (
-    <div className="text-center flex flex-col justify-center items-center">
+    <motion.div
+      variants={fadeIn("top", 0)}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0.1 }}
+      className="text-center flex flex-col justify-center items-center"
+    >
       <h2 className="text-lg font-semibold text-gray-700">Menu</h2>
       <p className="text-xl text-red-700 font-semibold">Ice Cream</p>
-      <div className="grid grid-cols-3 gap-x-32 gap-y-12 mt-12">
+      <motion.div    variants={fadeIn("up")}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: false, amount: 0 }} className="grid grid-cols-3 gap-x-32 gap-y-12 mt-12">
         {ICE_MENU.map((item) => (
           <div key={item.id} className="text-center">
             <img
@@ -24,8 +35,8 @@ const IceCream = () => {
             </div>
           </div>
         ))}
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

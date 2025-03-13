@@ -18,7 +18,7 @@ const Chef = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 mt-5 lg:grid-cols-3 gap-5">
           {chief.map((item, index) => (
             <motion.div
-              variants={fadeIn("up", `0.${index}`)}
+              variants={fadeIn("up")}
               initial="hidden"
               whileInView="show"
               viewport={{ once: false, amount: 0 }}

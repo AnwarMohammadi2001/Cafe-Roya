@@ -1,5 +1,7 @@
 import React from "react";
 import { FiMapPin, FiPhone, FiClock, FiMail } from "react-icons/fi";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/framermotion/variants";
 const Contact = () => {
   return (
     <div id="cntact" className="text-center max-w-[80%] mx-auto py-10">
@@ -7,7 +9,13 @@ const Contact = () => {
       <h2 className="text-gray-900 font-semibold pt-5 text-lg">
         Need Help? Contact Us
       </h2>
-      <div className="w-full rounded-lg mt-5 h-[500px]">
+      <motion.div
+        variants={fadeIn("down", 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="w-full rounded-lg mt-5 h-[500px]"
+      >
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1955.045213011696!2d69.09359696089034!3d34.503365385434925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38d1671df8243565%3A0x5d6d3b278baedde9!2sHussain%20Zada%20Market!5e0!3m2!1sen!2s!4v1741670971310!5m2!1sen!2s"
           width="100%"
@@ -18,9 +26,15 @@ const Contact = () => {
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-      </div>
+      </motion.div>
       <div className="max-w-8xl mx-auto px-6 py-10 bg-white shadow-lg rounded-lg">
-        <div className="space-y-4  flex justify-between">
+        <motion.div
+          variants={fadeIn("right", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="space-y-4  flex justify-between"
+        >
           {/* Address */}
           <div className="flex items-center space-x-3">
             <span className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-300">
@@ -70,8 +84,11 @@ const Contact = () => {
               <p className="text-gray-600">anwarmohammadi1390@gmail.com</p>
             </div>
           </div>
-        </div>
-        <div className="w-full mt-5  p-10 h-[480px] flex justify-center items-center bg-gray-100">
+        </motion.div>
+        <motion.div     variants={fadeIn("up")}
+                initial="hidden"
+                whileInView="show"
+                viewport={{ once: false, amount: 0 }} className="w-full mt-5  p-10 h-[480px] flex justify-center items-center bg-gray-100">
           <form className="space-y-6 w-full">
             {/* First Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -115,7 +132,7 @@ const Contact = () => {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

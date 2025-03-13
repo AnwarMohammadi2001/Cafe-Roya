@@ -1,5 +1,7 @@
 import React from "react";
 import booking from "../assets/booking.jpg";
+import { motion } from "framer-motion";
+import { fadeIn } from "../utils/framermotion/variants";
 
 const BookTable = () => {
   return (
@@ -10,16 +12,28 @@ const BookTable = () => {
       </h2>
       <div className="max-w-[80%] mx-auto flex mt-5 flex-col md:flex-row items-center justify-center">
         {/* Left Side - Image */}
-        <div className="w-full md:w-1/3">
+        <motion.div
+          variants={fadeIn("up")}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0 }}
+          className="w-full md:w-1/3"
+        >
           <img
             src={booking}
             alt="Booking Table"
             className="w-full h-[480px] object-cover  "
           />
-        </div>
+        </motion.div>
 
         {/* Right Side - Form */}
-        <div className="w-full md:w-2/3 p-10 h-[480px] flex justify-center items-center bg-gray-100">
+        <motion.div
+          variants={fadeIn("down", 0)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full md:w-2/3 p-10 h-[480px] flex justify-center items-center bg-gray-100"
+        >
           <form className="space-y-6 w-full">
             {/* First Row */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -76,7 +90,7 @@ const BookTable = () => {
               </button>
             </div>
           </form>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

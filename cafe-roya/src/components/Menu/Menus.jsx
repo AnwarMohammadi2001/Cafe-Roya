@@ -5,6 +5,8 @@ import Lunch from "./Lunch";
 import Desserts from "./Desserts";
 import Drinks from "./Drinks";
 import IceCream from "./IceCream";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../utils/framermotion/variants";
 
 const menuItems = [
   { name: "Starters", component: <Starters /> },
@@ -39,9 +41,15 @@ const Menus = () => {
           </button>
         ))}
       </div>
-      <div className="flex max-w-[80%] mx-auto flex-col min-h-[60vh] md:flex-row gap-10">
+      <motion.div
+        variants={fadeIn("top", 0)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.1 }}
+        className="flex max-w-[80%] mx-auto flex-col min-h-[60vh] md:flex-row gap-10"
+      >
         {menuItems.find((item) => item.name === activeMenu)?.component}
-      </div>
+      </motion.div>
     </section>
   );
 };
