@@ -18,13 +18,11 @@ const Navbar = () => {
   const darkMode = useSelector((state) => state.darkMode.darkMode); // Access dark mode state from Redux
 
   // Set dark or light class based on the darkMode state
-  const navClass = darkMode
-    ? "bg-gray-800 text-white"
-    : "bg-gray-100 text-gray-800";
+
   const iconClass = darkMode ? "text-yellow-400" : "text-gray-600"; // Change icon color based on dark mode
 
   return (
-    <nav className={`backdrop-blur-xs rounded-full ${navClass}`}>
+    <nav className={`backdrop-blur-xs rounded-full dark:bg-gray-900`}>
       <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo and Brand Name */}
         <div className="flex items-center space-x-2">
@@ -37,7 +35,7 @@ const Navbar = () => {
           {navItems.map((item) => (
             <li
               key={item.id}
-              className="hover:text-gray-900 relative text-lg group cursor-pointer"
+              className="hover:text-gray-900 relative dark:text-white text-lg group cursor-pointer"
             >
               <a href={item.path}>{item.name}</a>
               <span className="absolute text-gray-800 h-[2px] left-0 transform w-full -bottom-1 scale-x-0 tra group-hover:scale-x-100 group-hover:origin-left origin-right transition duration-300 bg-gray-800"></span>

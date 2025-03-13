@@ -18,18 +18,18 @@ const Chef = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 mt-5 lg:grid-cols-3 gap-5">
           {chief.map((item, index) => (
             <motion.div
-              variants={fadeIn("right", 0)}
+              variants={fadeIn("up", `0.${index}`)}
               initial="hidden"
               whileInView="show"
-              viewport={{ once: false, amount: 0.7 }}
+              viewport={{ once: false, amount: 0 }}
               key={index}
-              className="bg-white rounded-md overflow-hidden hover:shadow-xl  transition-all duration-300 relative group"
+              className="bg-white rounded-md overflow-hidden hover:shadow-xl transition-all duration-300 relative group"
             >
               <div className="relative">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-96 object-cover"
+                  className="w-full h-auto max-h-96 object-cover"
                 />
                 {/* Wave Shape */}
                 <div className="absolute -bottom-3 -left-2 -right-2 overflow-hidden">
@@ -46,23 +46,44 @@ const Chef = () => {
                 </div>
 
                 {/* Social Media Icons - Smooth Animation */}
-                <motion.div className="absolute top-12 right-0 transform translate-x-full group-hover:-translate-x-3 transition-all duration-300 ease-in-out space-x-4 items-center bg-white/30 backdrop-blur-md px-2.5 py-3 rounded-lg">
-                  {/* Example Social Media Icons */}
-                  <a href="#" className="text-gray-700 hover:text-blue-600">
+                <motion.div
+                  initial={{ x: "100%", opacity: 0 }}
+                  animate={{ x: 0, opacity: 1 }}
+                  transition={{ duration: 0.4, ease: "easeOut" }}
+                  className="absolute top-12 right-0 transform translate-x-full group-hover:translate-x-0 transition-all duration-300 ease-in-out space-x-4 items-center bg-white/30 backdrop-blur-md px-2.5 py-3 rounded-lg"
+                >
+                  {/* Social Media Links with ARIA labels */}
+                  <a
+                    href="#"
+                    aria-label="Facebook"
+                    className="text-gray-700 hover:text-blue-600"
+                  >
                     <CiFacebook size={24} />
                   </a>
-                  <a href="#" className="text-gray-700 hover:text-fuchsia-600">
+                  <a
+                    href="#"
+                    aria-label="Instagram"
+                    className="text-gray-700 hover:text-fuchsia-600"
+                  >
                     <CiInstagram size={24} />
                   </a>
-                  <a href="#" className="text-gray-700 hover:text-slate-900">
+                  <a
+                    href="#"
+                    aria-label="Twitter"
+                    className="text-gray-700 hover:text-slate-900"
+                  >
                     <BsTwitterX size={20} />
                   </a>
-                  <a href="#" className="text-gray-700 hover:text-green-600">
+                  <a
+                    href="#"
+                    aria-label="WhatsApp"
+                    className="text-gray-700 hover:text-green-600"
+                  >
                     <FaWhatsapp size={24} />
                   </a>
                 </motion.div>
               </div>
-              <div className="p-5 pb-8 ">
+              <div className="p-5 pb-8">
                 <h1 className="text-2xl font-semibold text-gray-800">
                   {item.name}
                 </h1>
