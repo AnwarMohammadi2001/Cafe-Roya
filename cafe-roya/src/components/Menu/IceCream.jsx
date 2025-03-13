@@ -16,7 +16,7 @@ const IceCream = () => {
       <motion.div    variants={fadeIn("up")}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0 }} className="grid grid-cols-3 gap-x-32 gap-y-12 mt-12">
+      viewport={{ once: false, amount: 0 }}  className="mt-12 flex flex-wrap justify-center gap-20 ">
         {ICE_MENU.map((item) => (
           <div key={item.id} className="text-center">
             <img

@@ -6,10 +6,12 @@ import { fadeIn } from "../utils/framermotion/variants";
 const BookTable = () => {
   return (
     <div className=" text-center my-10 ">
-      <h1 className="text-gray-700 text-lg">Book A Table</h1>
-      <h2 className="text-gray-900 font-semibold pt-5 text-lg">
-        Book Your Stay With Us
-      </h2>
+      <div className="text-center  space-y-3 mb-7">
+          <h1 className="text-xl font-Poppins font-semibold">Book A Table</h1>
+          <h2 className="text-4xl font-Satisfy text-gray-600">
+          Book Your Stay With Us
+          </h2>
+        </div>
       <div className="max-w-[80%] mx-auto flex mt-5 flex-col md:flex-row items-center justify-center">
         {/* Left Side - Image */}
         <motion.div

@@ -16,11 +16,11 @@ const Desserts = () => (
       initial="hidden"
       whileInView="show"
       viewport={{ once: false, amount: 0 }}
-      className="grid grid-cols-3 gap-x-32 gap-y-12 mt-12"
+     className="mt-12 flex flex-wrap justify-center gap-20 "
     >
       {menu.map((item) => (
         <div key={item.id} className="text-center">
-          <img src={item.image} alt="" />
+          <img src={item.image} alt={item.title} className="h-[300px]"  />
           <div className="space-y-2 mt-5">
             <h4 className="text-xl font-semibold text-gray-800">
               {item.title}

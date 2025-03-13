@@ -5,10 +5,12 @@ import { fadeIn } from "../utils/framermotion/variants";
 const Contact = () => {
   return (
     <div id="cntact" className="text-center max-w-[80%] mx-auto py-10">
-      <h1 className="text-gray-700 text-lg">Contact</h1>
-      <h2 className="text-gray-900 font-semibold pt-5 text-lg">
-        Need Help? Contact Us
-      </h2>
+      <div className="text-center  space-y-3 mb-7">
+        <h1 className="text-xl font-Poppins font-semibold">Contact</h1>
+        <h2 className="text-4xl font-Satisfy text-gray-600">
+          Need Help? Contact Us
+        </h2>
+      </div>
       <motion.div
         variants={fadeIn("down", 0)}
         initial="hidden"
@@ -85,10 +87,13 @@ const Contact = () => {
             </div>
           </div>
         </motion.div>
-        <motion.div     variants={fadeIn("up")}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: false, amount: 0 }} className="w-full mt-5  p-10 h-[480px] flex justify-center items-center bg-gray-100">
+        <motion.div
+          variants={fadeIn("up")}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0 }}
+          className="w-full mt-5  p-10 h-[480px] flex justify-center items-center bg-gray-100"
+        >
           <form className="space-y-6 w-full">
             {/* First Row */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

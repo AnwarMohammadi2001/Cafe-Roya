@@ -13,14 +13,12 @@ const About = () => {
       id="about"
       className="bg-amber-50 overflow-hidden min-h-[100vh]  py-12"
     >
-    
-      <div className="text-center mb-12">
-        <h1 className="text-lg font-bold text-gray-800">About Us</h1>
-        <h1 className="text-3xl mt-3 font-thin text-gray-800">
+      <div className="text-center  space-y-3 mb-7">
+        <h1 className="text-xl font-Poppins font-semibold">About Us</h1>
+        <h2 className="text-4xl font-Satisfy text-gray-600">
           Learn More About Us
-        </h1>
+        </h2>
       </div>
-
 
       <div className="flex max-w-[80%] mx-auto flex-col md:flex-row gap-8">
         {/* Left Section: Image */}

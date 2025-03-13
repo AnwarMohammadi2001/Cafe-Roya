@@ -23,14 +23,11 @@ const Gallary = () => {
 
   return (
     <div id="gallary" className="text-center max-w-[80%] mx-auto py-10">
-      <h1 className="text-gray-700 text-lg">CHEFS</h1>
-      <h2 className="text-gray-900 font-semibold pt-5 text-lg">
-        Our Professional Chefs
-      </h2>
-
       {/* Swiper Slider */}
       <div className="gallary-container">
-        <h1 className="heading">Flower Gallery</h1>
+        <h1 className="text-4xl font-Satisfy text-gray-600 mb-4">
+          Cafe Roya Gallery
+        </h1>
         <Swiper
           effect={"coverflow"}
           grabCursor={true}

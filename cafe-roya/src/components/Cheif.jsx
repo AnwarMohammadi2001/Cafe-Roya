@@ -11,10 +11,12 @@ const Chef = () => {
   return (
     <div id="chef" className="bg-gray-100 ">
       <div className="text-center max-w-[80%] mx-auto py-10">
-        <h1 className="text-gray-700 text-lg">CHEFS</h1>
-        <h2 className="text-gray-900 font-semibold pt-5 text-lg">
-          Our Professional Chefs
-        </h2>
+        <div className="text-center  space-y-3 mb-7">
+          <h1 className="text-xl font-Poppins font-semibold">CHEFS</h1>
+          <h2 className="text-4xl font-Satisfy text-gray-600">
+            Our Professional Chefs
+          </h2>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 mt-5 lg:grid-cols-3 gap-5">
           {chief.map((item, index) => (
             <motion.div

@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Cafe Logo and Name */}
           <div className="flex items-center  space-x-2">
             <div className="text-5xl font-bold">☕</div>
-            <span className="text-xl font-semibold">Cafe Roya</span>
+            <span className="text-xl font-semibold font-Roboto">Cafe Roya</span>
           </div>
 
           {/* Description */}

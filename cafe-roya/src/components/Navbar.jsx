@@ -27,7 +27,7 @@ const Navbar = () => {
         {/* Logo and Brand Name */}
         <div className="flex items-center space-x-2">
           <div className="text-2xl font-bold">☕</div>
-          <span className="text-2xl font-semibold">Cafe Roya</span>
+          <span className="text-2xl font-semibold font-Roboto">Cafe Roya</span>
         </div>
 
         {/* Navigation Links */}
@@ -38,7 +38,7 @@ const Navbar = () => {
               className="hover:text-gray-900 relative dark:text-white text-lg group cursor-pointer"
             >
               <a href={item.path}>{item.name}</a>
-              <span className="absolute text-gray-800 h-[2px] left-0 transform w-full -bottom-1 scale-x-0 tra group-hover:scale-x-100 group-hover:origin-left origin-right transition duration-300 bg-gray-800"></span>
+              <span className="absolute text-gray-800 h-[2px] left-0 transform w-full -bottom-1 scale-x-0  group-hover:scale-x-100 group-hover:origin-left origin-right transition duration-300 bg-gray-800"></span>
             </li>
           ))}
         </ul>

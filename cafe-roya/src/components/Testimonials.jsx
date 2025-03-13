@@ -16,9 +16,9 @@ const Testimonials = () => {
 
   return (
     <div className="max-w-[60%] relative group py-10 mx-auto">
-      <div className="text-center">
-        <h1 className="text-gray-700 text-lg">TESTIMONIALS</h1>
-        <h2 className="text-gray-900 font-semibold pt-5 text-lg">
+      <div className="text-center  space-y-3 mb-7">
+        <h1 className="text-xl font-Poppins font-semibold">TESTIMONIALS</h1>
+        <h2 className="text-4xl font-Satisfy text-gray-600">
           What Are They Saying About Us
         </h2>
       </div>
