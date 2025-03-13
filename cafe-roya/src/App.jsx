@@ -3,7 +3,7 @@ import Home from "./pages/Home";
 
 const App = () => {
   return (
-    <div className="">
+    <div className="dark:bg-zinc-900">
       <Home />
     </div>
   );

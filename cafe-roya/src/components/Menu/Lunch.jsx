@@ -9,8 +9,8 @@ const Lunch = () => (
     viewport={{ once: false, amount: 0.1 }}
     className="text-center"
   >
-    <h2 className="text-lg font-semibold text-gray-700">Menu</h2>
-    <p className="text-xl text-red-700 font-semibold">Lunch</p>
+    <h2 className="text-lg font-semibold text-gray-700 dark:text-gray-300">Menu</h2>
+    <p className="text-xl text-red-700 font-semibold dark:text-amber-500">Lunch</p>
     <motion.div
       variants={fadeIn("up")}
       initial="hidden"
@@ -22,11 +22,11 @@ const Lunch = () => (
         <div key={item.id} className="text-center">
           <img src={item.image} alt={item.title} className="h-[300px]"  />
           <div className="space-y-2 mt-5">
-            <h4 className="text-xl font-semibold text-gray-800">
+            <h4 className="text-xl font-semibold text-gray-800 dark:text-gray-300">
               {item.title}
             </h4>
-            <p className="text-lg text-gray-700">{item.des}</p>
-            <span className="text-xl font-bold text-red-800">${item.cost}</span>
+            <p className="text-lg text-gray-700 dark:text-gray-300">{item.des}</p>
+            <span className="text-xl font-bold text-red-800 dark:text-amber-500">${item.cost}</span>
           </div>
         </div>
       ))}

@@ -36,7 +36,7 @@ const Footer = () => {
           {/* Cafe Logo and Name */}
           <div className="flex items-center  space-x-2">
             <div className="text-5xl font-bold">☕</div>
-            <span className="text-xl font-semibold font-Roboto">Cafe Roya</span>
+            <span className="text-xl font-semibold font-Roboto dark:text-amber-500">Cafe Roya</span>
           </div>
 
           {/* Description */}
@@ -64,7 +64,7 @@ const Footer = () => {
         </div>
         <div className="text-white">
           <div className="flex items-center   space-x-2">
-            <span className="text-lg font-semibold ">Quick Link</span>
+            <span className="text-lg font-semibold dark:text-amber-500">Quick Link</span>
           </div>
 
           <ul className=" pt-7 font-medium space-y-2">
@@ -81,7 +81,7 @@ const Footer = () => {
         </div>
         <div className="text-white">
           <div className="flex items-center  space-x-2">
-            <span className="text-lg font-semibold ">Instagram</span>
+            <span className="text-lg font-semibold dark:text-amber-500">Instagram</span>
           </div>
 
           <div className="pt-9 grid grid-cols-3 gap-2">
@@ -95,7 +95,7 @@ const Footer = () => {
         <div className="text-white">
           {/* Title */}
           <div className="flex items-center space-x-2">
-            <span className="text-lg font-semibold">Subscribe</span>
+            <span className="text-lg font-semibold dark:text-amber-500">Subscribe</span>
           </div>
 
           {/* Description */}

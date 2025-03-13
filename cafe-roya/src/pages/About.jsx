@@ -6,16 +6,17 @@ import img4 from "../assets/about5.jpg";
 import table from "../assets/table.jpg";
 import { fadeIn } from "../utils/framermotion/variants";
 import { motion } from "framer-motion";
+import { FaCheck } from "react-icons/fa";
 
 const About = () => {
   return (
     <div
       id="about"
-      className="bg-amber-50 overflow-hidden min-h-[100vh]  py-12"
+      className="bg-amber-50 dark:bg-zinc-900 overflow-hidden min-h-[100vh]  py-12"
     >
       <div className="text-center  space-y-3 mb-7">
-        <h1 className="text-xl font-Poppins font-semibold">About Us</h1>
-        <h2 className="text-4xl font-Satisfy text-gray-600">
+        <h1 className="text-xl font-Poppins dark:text-gray-100 font-semibold">About Us</h1>
+        <h2 className="text-4xl font-Satisfy text-gray-600 dark:text-gray-300">
           Learn More About Us
         </h2>
       </div>
@@ -50,10 +51,10 @@ const About = () => {
               <h3 className="text-2xl font-semibold text-white mb-2">
                 Book a Table
               </h3>
-              <p className="text-gray-200 mb-4">
+              <p className="text-gray-200  mb-4">
                 Reserve your spot for an unforgettable dining experience.
               </p>
-              <button className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition duration-300">
+              <button className="px-4 py-2 bg-yellow-500 text-black font-semibold rounded hover:bg-byellow-600 transition duration-300">
                 Reserve Now
               </button>
             </div>
@@ -69,12 +70,12 @@ const About = () => {
           className="w-full md:w-1/2"
         >
           {/* Title */}
-          <h2 className="text-3xl font-semibold text-gray-800 mb-4">
+          <h2 className="text-3xl dark:text-gray-100 font-semibold font-Satisfy text-gray-800 mb-4">
             We with The Aspects Foos Professional Services
           </h2>
 
           {/* Description */}
-          <p className="text-gray-600 text-base text-justify mb-6">
+          <p className="text-gray-600 dark:text-gray-300 text-base text-justify mb-6">
             Nestled in the heart of the city, Café Roya is more than just a
             place to eat – it’s an experience that brings together tradition,
             flavor, and warmth. Our café is inspired by the rich heritage of our
@@ -84,14 +85,26 @@ const About = () => {
           </p>
 
           {/* List */}
-          <ul className="list-disc list-inside text-sm text-gray-600 mb-6">
-            {" "}
-            <li>Online Ordering & Delivery</li>{" "}
-            <li>Catering for Special Events</li>{" "}
-            <li>Private Dining & Reservations</li>{" "}
-            <li>Custom Cake & Pastry Orders</li>{" "}
+          <ul className="list-none text-sm text-gray-600 dark:text-gray-300 mb-6 space-y-2">
+            <li className="flex items-center gap-2">
+              <FaCheck className="text-green-500 dark:text-yellow-500" />
+              Online Ordering & Delivery
+            </li>
+            <li className="flex items-center gap-2">
+              <FaCheck className="text-green-500 dark:text-yellow-500" />
+              Catering for Special Events
+            </li>
+            <li className="flex items-center gap-2">
+              <FaCheck className="text-green-500 dark:text-yellow-500" />
+              Private Dining & Reservations
+            </li>
+            <li className="flex items-center gap-2 ">
+              <FaCheck className="text-green-500 dark:text-yellow-500" />
+              Custom Cake & Pastry Orders
+            </li>
           </ul>
-          <p className="text-gray-600 text-base text-justify mb-6">
+
+          <p className="text-gray-600 text-base dark:text-gray-300 text-justify mb-6">
             Nestled in the heart of the city, Café Roya is more than just a
             place to eat – it’s an experience that brings together tradition,
             flavor, and warmth.

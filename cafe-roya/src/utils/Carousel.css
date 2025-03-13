@@ -43,6 +43,10 @@
 .carousel .list .item .topic {
   color: #f1683a;
 }
+.carousel .list .item .des {
+  color: white;
+  font-size: 1rem;
+}
 .carousel .list .item .buttons {
   display: grid;
   grid-template-columns: repeat(2, 130px);

@@ -34,7 +34,7 @@ const BookTable = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
-          className="w-full md:w-2/3 p-10 h-[480px] flex justify-center items-center bg-gray-100"
+          className="w-full md:w-2/3 p-10 h-[480px] flex justify-center items-center bg-gray-100 dark:bg-zinc-800"
         >
           <form className="space-y-6 w-full">
             {/* First Row */}

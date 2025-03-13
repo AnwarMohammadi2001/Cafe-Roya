@@ -4,7 +4,7 @@ import img1 from "../assets/image/img1.jpg";
 import img2 from "../assets/image/img2.jpg";
 import img3 from "../assets/image/img3.jpg";
 import img4 from "../assets/image/img4.jpg";
-import her1 from '../assets/hero1.jpg'
+import her5 from '../assets/image/img5.jpg'
 import her2 from '../assets/hero2.jpg'
 import hero3 from '../assets/hero3.jpg'
 
@@ -17,7 +17,7 @@ const Hero = () => {
   const slides = [
     {
       id: 1,
-      image: img1,
+      image: her5,
       author: "LUNDEV",
       title: "DESIGN SLIDER",
       topic: "ANIMAL",

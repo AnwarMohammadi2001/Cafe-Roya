@@ -9,11 +9,13 @@ import { fadeIn } from "../utils/framermotion/variants";
 
 const Chef = () => {
   return (
-    <div id="chef" className="bg-gray-100 ">
+    <div id="chef" className="bg-gray-100 dark:bg-zinc-900">
       <div className="text-center max-w-[80%] mx-auto py-10">
         <div className="text-center  space-y-3 mb-7">
-          <h1 className="text-xl font-Poppins font-semibold">CHEFS</h1>
-          <h2 className="text-4xl font-Satisfy text-gray-600">
+          <h1 className="text-xl font-Poppins font-semibold dark:text-gray-100">
+            CHEFS
+          </h1>
+          <h2 className="text-4xl font-Satisfy text-gray-600 dark:text-gray-300">
             Our Professional Chefs
           </h2>
         </div>
@@ -25,7 +27,7 @@ const Chef = () => {
               whileInView="show"
               viewport={{ once: false, amount: 0 }}
               key={index}
-              className="bg-white rounded-md overflow-hidden hover:shadow-xl transition-all duration-300 relative group"
+              className="bg-white dark:bg-zinc-800 rounded-md overflow-hidden hover:shadow-xl transition-all duration-300 relative group"
             >
               <div className="relative">
                 <img
@@ -42,7 +44,7 @@ const Chef = () => {
                   >
                     <path
                       d="M0.00,49.98 C150.00,150.00 349.73,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                      fill="#fff"
+                      className="fill-white dark:fill-zinc-800"
                     ></path>
                   </svg>
                 </div>
@@ -86,11 +88,13 @@ const Chef = () => {
                 </motion.div>
               </div>
               <div className="p-5 pb-8">
-                <h1 className="text-2xl font-semibold text-gray-800">
+                <h1 className="text-2xl font-semibold text-gray-800 dark:text-amber-500">
                   {item.name}
                 </h1>
-                <h2 className="text-lg text-gray-500">{item.job}</h2>
-                <p className="text-gray-600 mt-4 text-sm mb-10">
+                <h2 className="text-lg text-gray-500 dark:text-gray-300">
+                  {item.job}
+                </h2>
+                <p className="text-gray-600 mt-4 text-sm mb-10 dark:text-gray-300">
                   {item.description}
                 </p>
               </div>

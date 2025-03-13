@@ -6,8 +6,8 @@ const Contact = () => {
   return (
     <div id="cntact" className="text-center max-w-[80%] mx-auto py-10">
       <div className="text-center  space-y-3 mb-7">
-        <h1 className="text-xl font-Poppins font-semibold">Contact</h1>
-        <h2 className="text-4xl font-Satisfy text-gray-600">
+        <h1 className="text-xl font-Poppins font-semibold dark:text-gray-100">Contact</h1>
+        <h2 className="text-4xl font-Satisfy text-gray-600 dark:text-gray-300">
           Need Help? Contact Us
         </h2>
       </div>
@@ -29,7 +29,7 @@ const Contact = () => {
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
       </motion.div>
-      <div className="max-w-8xl mx-auto px-6 py-10 bg-white shadow-lg rounded-lg">
+      <div className="max-w-8xl mx-auto px-6 py-10 bg-white dark:bg-zinc-800 shadow-lg rounded-lg">
         <motion.div
           variants={fadeIn("right", 0)}
           initial="hidden"
@@ -39,37 +39,37 @@ const Contact = () => {
         >
           {/* Address */}
           <div className="flex items-center space-x-3">
-            <span className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-300">
-              <FiMapPin className="text-red-600" size={24} />
+            <span className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-300 ">
+              <FiMapPin className="text-red-600 dark:text-amber-500" size={24} />
             </span>
             <div className="text-start ml-2">
-              <h3 className="text-lg font-medium text-gray-700">Address</h3>
-              <p className="text-gray-600">Baraki, Kabul, Afghanistan</p>
+              <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Address</h3>
+              <p className="text-gray-600 dark:text-gray-300">Baraki, Kabul, Afghanistan</p>
             </div>
           </div>
 
           {/* Phone Number */}
           <div className="flex items-center space-x-3">
             <span className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-300">
-              <FiPhone className="text-red-600" size={24} />
+              <FiPhone className="text-red-600 dark:text-amber-500" size={24} />
             </span>
             <div className="text-start ml-2">
-              <h3 className="text-lg font-medium text-gray-700">Phone</h3>
-              <p className="text-gray-600">+93 772 387 935</p>
+              <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Phone</h3>
+              <p className="text-gray-600 dark:text-gray-300">+93 772 387 935</p>
             </div>
           </div>
 
           {/* Opening Hours */}
           <div className="flex items-center space-x-3">
             <span className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-300">
-              <FiClock className="text-red-600" size={24} />
+              <FiClock className="text-red-600 dark:text-amber-500" size={24} />
             </span>
 
             <div className="text-start ml-2">
-              <h3 className="text-lg font-medium text-gray-700">
+              <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">
                 Opening Hours
               </h3>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 Monday - Sunday: 8:00 AM - 10:00 PM
               </p>
             </div>
@@ -78,12 +78,12 @@ const Contact = () => {
           {/* Email */}
           <div className="flex items-center space-x-3">
             <span className="h-12 w-12 rounded-full flex justify-center items-center bg-gray-300">
-              <FiMail className="text-red-600" size={24} />
+              <FiMail className="text-red-600 dark:text-amber-500" size={24} />
             </span>
 
             <div className="text-start ml-2">
-              <h3 className="text-lg font-medium text-gray-700">Email</h3>
-              <p className="text-gray-600">anwarmohammadi1390@gmail.com</p>
+              <h3 className="text-lg font-medium text-gray-700 dark:text-gray-300">Email</h3>
+              <p className="text-gray-600 dark:text-gray-300">anwarmohammadi1390@gmail.com</p>
             </div>
           </div>
         </motion.div>
@@ -92,7 +92,7 @@ const Contact = () => {
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0 }}
-          className="w-full mt-5  p-10 h-[480px] flex justify-center items-center bg-gray-100"
+          className="w-full mt-5  p-10 h-[480px] flex justify-center items-center "
         >
           <form className="space-y-6 w-full">
             {/* First Row */}

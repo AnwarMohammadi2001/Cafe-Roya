@@ -23,8 +23,10 @@ const Menus = () => {
   return (
     <section id="menu" className="p-6">
       <div className="text-center space-y-3 py-5">
-        <h2 className="text-xl font-Poppins font-semibold">Our Menu</h2>
-        <h3 className="text-4xl font-Satisfy text-gray-600">
+        <h2 className="text-xl font-Poppins dark:text-gray-100 font-semibold">
+          Our Menu
+        </h2>
+        <h3 className="text-4xl font-Satisfy dark:text-gray-300 text-gray-600">
           Check Our Cafe Roya Menu
         </h3>
       </div>
@@ -34,15 +36,15 @@ const Menus = () => {
             <button
               className={`px-4 py-2 transition-colors text-lg border-gray-300 duration-300 ${
                 activeMenu === item.name
-                  ? "text-gray-800 border-red-700"
-                  : "text-gray-800"
+                  ? "text-gray-800 dark:text-gray-100 border-red-700 dark:border-amber-500"
+                  : "text-gray-800 dark:text-gray-100"
               }`}
               onClick={() => setActiveMenu(item.name)}
             >
               {item.name}
             </button>
             <span
-              className={`absolute h-[2px] w-full left-0 -bottom-0.5 transition-transform duration-300 bg-red-800 origin-right group-hover:origin-left ${
+              className={`absolute h-[2px] w-full left-0 -bottom-0.5 transition-transform duration-300 bg-red-800 dark:bg-amber-500 origin-right group-hover:origin-left ${
                 activeMenu === item.name
                   ? "scale-x-100"
                   : "scale-x-0 group-hover:scale-x-100"

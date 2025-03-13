@@ -25,7 +25,7 @@ const Gallary = () => {
     <div id="gallary" className="text-center max-w-[80%] mx-auto py-10">
       {/* Swiper Slider */}
       <div className="gallary-container">
-        <h1 className="text-4xl font-Satisfy text-gray-600 mb-4">
+        <h1 className="text-4xl font-Satisfy text-gray-600 dark:text-gray-100 mb-4">
           Cafe Roya Gallery
         </h1>
         <Swiper
@@ -56,7 +56,7 @@ const Gallary = () => {
             </SwiperSlide>
           ))}
 
-          <div className="slider-controler ">
+          {/* <div className="slider-controler ">
             <div className="swiper-button-prev slider-arrow">
               <IoIosArrowRoundBack />
             </div>
@@ -64,7 +64,7 @@ const Gallary = () => {
               <IoIosArrowRoundForward />
             </div>
             <div className="swiper-pagination"></div>
-          </div>
+          </div> */}
         </Swiper>
       </div>
     </div>
